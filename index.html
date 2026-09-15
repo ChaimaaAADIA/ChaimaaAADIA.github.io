@@ -172,9 +172,9 @@
     position:relative;
     z-index:2;
     display:grid;
-    grid-template-columns:1.15fr .85fr;
+    grid-template-columns:1.2fr .8fr;
     align-items:center;
-    gap:3rem;
+    gap:3.5rem;
     padding-block:4.6rem 3.6rem;
   }
   .hero-eyebrow{
@@ -264,7 +264,7 @@
     display:flex;
     align-items:center;
     justify-content:center;
-    min-height:320px;
+    min-height:380px;
   }
   .avatar-ring{
     width:230px; height:230px;
@@ -308,10 +308,15 @@
     width:7px; height:7px; border-radius:50%; flex:none;
     background:var(--dot, var(--hero-teal));
   }
-  .fb-1{top:6%; left:-4%; --dot:var(--hero-teal);}
-  .fb-2{bottom:14%; left:-10%; --dot:var(--hero-coral);}
-  .fb-3{top:2%; right:-8%; --dot:var(--hero-coral);}
-  .fb-4{bottom:0%; right:-6%; --dot:var(--hero-teal);}
+  /* left side: Python, Machine Learning, LLM */
+  .fb-1{top:6%; left:0%; --dot:var(--hero-teal);}
+  .fb-2{top:40%; left:-8%; --dot:var(--hero-coral);}
+  .fb-5{top:74%; left:0%; --dot:var(--hero-coral);}
+  /* right side: Power BI, SQL, RAG, Databricks */
+  .fb-3{top:0%; right:2%; --dot:var(--hero-coral);}
+  .fb-4{top:26%; right:-8%; --dot:var(--hero-teal);}
+  .fb-6{top:52%; right:2%; --dot:var(--hero-teal);}
+  .fb-7{top:78%; right:-8%; --dot:var(--hero-coral);}
 
   @media (max-width:900px){
     .hero-inner{grid-template-columns:1fr; padding-block:3.2rem 2.6rem;}
@@ -597,11 +602,8 @@
           <a class="social-btn" href="mailto:aadia.chaimaa10@gmail.com" aria-label="Email">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
           </a>
-          <a class="social-btn" href="https://www.linkedin.com/in/chaimaa-a-94035119a/" aria-label="LinkedIn">
+          <a class="social-btn" href="https://www.linkedin.com/in/chaimaa-aadia-94035119a/" aria-label="LinkedIn">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          </a>
-          <a class="social-btn" href="tel:+33743624932" aria-label="Téléphone">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           </a>
         </div>
       </div>
@@ -611,6 +613,9 @@
         <div class="float-badge fb-2"><i></i>Machine Learning</div>
         <div class="float-badge fb-3"><i></i>Power BI</div>
         <div class="float-badge fb-4"><i></i>SQL</div>
+        <div class="float-badge fb-5"><i></i>LLM</div>
+        <div class="float-badge fb-6"><i></i>RAG</div>
+        <div class="float-badge fb-7"><i></i>Databricks</div>
       </div>
     </div>
   </section>
@@ -669,10 +674,11 @@
             <div class="t-when">Sep 2025 — Aujourd'hui<br>Paris, FR</div>
           </div>
           <ul>
-            <li>Analyse des données clients et transactionnelles pour piloter la performance du programme de fidélité et mesurer l'impact des offres via des <b>tests A/B</b>.</li>
-            <li>Conception de modèles de <b>segmentation clients</b> pour identifier les profils à fort potentiel et personnaliser les actions marketing.</li>
-            <li>Suivi des campagnes pour mesurer l'uplift et conception de tableaux de bord décisionnels sous Power BI.</li>
-            <li>Production d'insights business et de recommandations data-driven avec les équipes marketing.</li>
+            <li>Conception d'un <b>chatbot RAG</b> répondant aux besoins des équipes Marketing afin de faciliter l'accès aux KPIs Power BI.</li>
+            <li>Conception d'un modèle de classification des avis clients afin d'orienter les décisions d'amélioration de l'expérience client.</li>
+            <li>Élaboration de modèles de <b>segmentation clients</b> pour orienter les stratégies marketing et de fidélisation.</li>
+            <li>Analyse des performances des campagnes via SQL, Python et <b>tests A/B</b> pour recommander des optimisations.</li>
+            <li>Définition des KPIs et conception de tableaux de bord Power BI pour le pilotage des activités Marketing.</li>
           </ul>
         </div>
       </div>
@@ -688,11 +694,11 @@
             <div class="t-when">Juin 2023 — Août 2025<br>Casablanca, MA</div>
           </div>
           <ul>
-            <li>Modèles ML pour identifier les zones à fort potentiel, optimisant le ciblage swap FTTH et augmentant la qualité d'expérience de <b>+40%</b>.</li>
-            <li>Détection temps réel des dégradations réseau FTTH/ADSL avec une précision de <b>97%</b>, réduisant les réclamations de <b>&minus;60%</b>.</li>
-            <li>Pilotage du déploiement international d'une solution IA de classification des tests clients dans les filiales Orange Afrique &amp; MEA.</li>
-            <li>Automatisation de <b>85%</b> des flux de collecte de données, réduisant le traitement de 8 jours à <b>2 heures</b>.</li>
-            <li>Dashboards Power BI offrant au Top Management un pilotage en temps réel de la QoS réseau.</li>
+            <li>Développement de modèles de Machine Learning pour la <b>détection d'anomalies en temps réel</b> sur le réseau Fixe, réduisant les réclamations clients de <b>&minus;60%</b>.</li>
+            <li>Conception de modèles d'analyse géospatiale pour identifier les zones prioritaires de déploiement FTTH et d'implantation de nouvelles agences, améliorant la QoE de <b>+40%</b>.</li>
+            <li>Pilotage du déploiement d'une solution IA de classification dans les filiales Orange Afrique &amp; MEA, en accompagnant les équipes techniques locales.</li>
+            <li>Industrialisation des pipelines de collecte et de traitement des données via Python, SQL, APIs et Web Scraping, réduisant le temps de traitement de <b>8 jours à 2 heures</b>.</li>
+            <li>Définition des KPIs et conception de tableaux de bord Power BI pour accompagner la prise de décision du Top Management.</li>
           </ul>
         </div>
       </div>
@@ -708,10 +714,10 @@
             <div class="t-when">Juil 2022 — Mai 2023<br>Had Soualem, MA</div>
           </div>
           <ul>
-            <li>Système de reconnaissance de plaques d'immatriculation pour le contrôle d'accès : <b>98%</b> de précision, traitement réduit de 5 min à 50 s, ressources réduites de 4 à 1 opérateur.</li>
-            <li>Solution Computer Vision pour l'inspection qualité : <b>+37%</b> de cadence, <b>&minus;15%</b> d'erreurs humaines.</li>
-            <li>Automatisation de processus via APIs Python, générant un gain de 10 à 15h par semaine.</li>
-            <li>Dashboards Power BI offrant une visibilité en temps réel sur les performances opérationnelles.</li>
+            <li>Développement d'un modèle de Computer Vision pour le contrôle d'accès véhicule par reconnaissance de plaques d'immatriculation (ALPR), atteignant <b>98%</b> de précision et réduisant le temps de traitement de 5 min à 50 s.</li>
+            <li>Déploiement d'une solution de Computer Vision pour l'inspection qualité industrielle, améliorant la cadence de production de <b>+37%</b> et réduisant les erreurs humaines de <b>&minus;15%</b>.</li>
+            <li>Automatisation des pipelines de collecte et de traitement de données via Python et APIs, générant un gain de 10 à 15 heures par semaine.</li>
+            <li>Création de dashboards Power BI offrant une visibilité en temps réel sur les performances opérationnelles.</li>
           </ul>
         </div>
       </div>
@@ -727,35 +733,56 @@
       <div class="skill-group">
         <div class="skill-group-head">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 0-4 4c0 1 .3 1.8.8 2.5A4 4 0 0 0 6 12a4 4 0 0 0 1 2.6A4 4 0 0 0 8 22h8a4 4 0 0 0 1-7.4A4 4 0 0 0 18 12a4 4 0 0 0-2.8-3.5c.5-.7.8-1.5.8-2.5a4 4 0 0 0-4-4z"/></svg></div>
-          <h3>Data &amp; Machine Learning</h3>
+          <h3>ML / IA &amp; MLOps</h3>
         </div>
         <div class="skill-chips">
-          <span class="skill-chip">Scikit-learn</span><span class="skill-chip">TensorFlow</span><span class="skill-chip">PyTorch</span>
-          <span class="skill-chip">Keras</span><span class="skill-chip">OpenCV</span><span class="skill-chip">YOLO</span>
-          <span class="skill-chip">Pandas</span><span class="skill-chip">NumPy</span><span class="skill-chip">Feature Engineering</span>
+          <span class="skill-chip">Python</span><span class="skill-chip">SQL</span><span class="skill-chip">Scikit-learn</span>
+          <span class="skill-chip">XGBoost</span><span class="skill-chip">TensorFlow</span><span class="skill-chip">PyTorch</span>
+          <span class="skill-chip">YOLO</span><span class="skill-chip">OpenCV</span><span class="skill-chip">MLflow</span>
+          <span class="skill-chip">Pandas</span><span class="skill-chip">NumPy</span><span class="skill-chip">R</span>
+          <span class="skill-chip">Git</span><span class="skill-chip">CI/CD</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-head">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <h3>GenAI &amp; NLP</h3>
+        </div>
+        <div class="skill-chips">
+          <span class="skill-chip">LLM</span><span class="skill-chip">RAG</span><span class="skill-chip">Agents IA</span>
+          <span class="skill-chip">FAISS</span><span class="skill-chip">LangChain</span><span class="skill-chip">Prompt Engineering</span>
+          <span class="skill-chip">Hugging Face</span><span class="skill-chip">Évaluation LLM</span><span class="skill-chip">Grounding</span>
         </div>
       </div>
       <div class="skill-group">
         <div class="skill-group-head">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 0 0 0-9 6 6 0 0 0-11.4-1.5A5 5 0 0 0 6.5 19h11z"/></svg></div>
-          <h3>Cloud &amp; Big Data</h3>
+          <h3>Big Data &amp; Cloud</h3>
         </div>
         <div class="skill-chips">
-          <span class="skill-chip">Spark</span><span class="skill-chip">Hadoop</span><span class="skill-chip">Hive</span>
-          <span class="skill-chip">BigQuery</span><span class="skill-chip">Google Cloud</span><span class="skill-chip">AWS</span>
-          <span class="skill-chip">Docker</span><span class="skill-chip">ETL</span><span class="skill-chip">SQL</span>
-          <span class="skill-chip">PL/SQL</span><span class="skill-chip">Oracle</span>
+          <span class="skill-chip">AWS</span><span class="skill-chip">Azure</span><span class="skill-chip">GCP</span>
+          <span class="skill-chip">Databricks</span><span class="skill-chip">BigQuery</span><span class="skill-chip">Spark</span>
+          <span class="skill-chip">Docker</span><span class="skill-chip">API REST</span><span class="skill-chip">Microservices</span>
         </div>
       </div>
       <div class="skill-group">
         <div class="skill-group-head">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="7" y="12" width="3" height="6"/><rect x="12" y="8" width="3" height="10"/><rect x="17" y="5" width="3" height="13"/></svg></div>
-          <h3>Développement &amp; Visualisation</h3>
+          <h3>Visualisation &amp; Reporting</h3>
         </div>
         <div class="skill-chips">
-          <span class="skill-chip">Python</span><span class="skill-chip">Flask</span><span class="skill-chip">API REST</span>
-          <span class="skill-chip">Power BI</span><span class="skill-chip">QlikSense</span><span class="skill-chip">Tableau</span>
-          <span class="skill-chip">GitLab CI/CD</span><span class="skill-chip">Git</span><span class="skill-chip">Linux</span>
+          <span class="skill-chip">Power BI</span><span class="skill-chip">Power Query</span><span class="skill-chip">Tableau</span>
+          <span class="skill-chip">Looker Studio</span><span class="skill-chip">Qlik Sense</span><span class="skill-chip">Excel</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-head">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M9 4H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-4"/><path d="m9 14 2 2 4-4"/></svg></div>
+          <h3>Méthodes &amp; Standards</h3>
+        </div>
+        <div class="skill-chips">
+          <span class="skill-chip">Agile</span><span class="skill-chip">Scrum</span><span class="skill-chip">Analyse des besoins</span>
+          <span class="skill-chip">Animation d'ateliers</span><span class="skill-chip">Data Storytelling</span>
         </div>
       </div>
     </div>
@@ -830,13 +857,9 @@
             <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg></div>
             <div><b>Email</b><span>aadia.chaimaa10@gmail.com</span></div>
           </a>
-          <a class="contact-card" href="tel:+33743624932">
-            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
-            <div><b>Téléphone</b><span>+33 7 43 62 49 32</span></div>
-          </a>
-          <a class="contact-card" href="https://www.linkedin.com/in/chaimaa-a-94035119a/">
+          <a class="contact-card" href="https://www.linkedin.com/in/chaimaa-aadia-94035119a/">
             <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></div>
-            <div><b>LinkedIn</b><span>linkedin.com/in/chaimaa-a-94035119a</span></div>
+            <div><b>LinkedIn</b><span>linkedin.com/in/chaimaa-aadia-94035119a</span></div>
           </a>
         </div>
       </div>
@@ -850,7 +873,7 @@
     <a class="social-btn" href="mailto:aadia.chaimaa10@gmail.com" aria-label="Email">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
     </a>
-    <a class="social-btn" href="https://www.linkedin.com/in/chaimaa-a-94035119a/" aria-label="LinkedIn">
+    <a class="social-btn" href="https://www.linkedin.com/in/chaimaa-aadia-94035119a/" aria-label="LinkedIn">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
     </a>
   </div>
