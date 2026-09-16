@@ -997,5 +997,22 @@
       window.addEventListener('resize', resize);
       requestAnimationFrame(frame);
     }catch(e){}
+
+    // Visit notification (fire-and-forget, never blocks the page)
+    try{
+      fetch('https://portfolio-visitor-notif.aadia-chaimaa20.workers.dev', {
+        method: 'POST',
+        mode: 'cors',
+        keepalive: true,
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          page: location.pathname,
+          referrer: document.referrer,
+          userAgent: navigator.userAgent,
+          language: navigator.language,
+          timestamp: new Date().toISOString()
+        })
+      }).catch(function(){});
+    }catch(e){}
   })();
 </script>
