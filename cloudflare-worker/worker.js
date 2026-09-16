@@ -34,6 +34,7 @@ export default {
         <li><b>Langue :</b> ${data.language || "?"}</li>
         <li><b>Date :</b> ${data.timestamp || new Date().toISOString()}</li>
         <li><b>Ville / pays :</b> ${cf.city || "?"} / ${cf.country || "?"}</li>
+        <li><b>Organisation / FAI :</b> ${cf.asOrganization || "?"}</li>
       </ul>
     `;
 
